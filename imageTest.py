@@ -1,5 +1,13 @@
 from inky.auto import auto
+from PIL import Image
 
 display = auto()
-print (display.colour)
-print (display.resolution)
+
+path = '/testImage'
+try:  
+    img  = Image.open(path)  
+except IOError: 
+    pass
+  
+display.set_image(img) 
+display.show()
