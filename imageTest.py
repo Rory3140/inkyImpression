@@ -9,6 +9,6 @@ try:
 except IOError: 
     print('Error: Could not find imaeg')
     pass
-display.set_border(inky.BLUE)  
+display.set_border('blue')  
 display.set_image(img) 
 display.show()
